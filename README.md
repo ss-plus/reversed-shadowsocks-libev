@@ -1,2 +1,2 @@
 # reversed-shadowsocks-libev
-Reversed shadowsocks-libev package for ss-plus.
+The reversed edition of shadowsocks-libev built for ss-plus.
