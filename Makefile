@@ -29,7 +29,7 @@ include $(INCLUDE_DIR)/package.mk
 define Package/$(PKG_NAME)/Default
   SECTION:=everun
   CATEGORY:=everun
-  SUBMENU:=2. Applications
+  SUBMENU:=3. Utilities
   TITLE:=shadowsocksR-libev
   URL:=https://github.com/breakwa11/shadowsocks-libev
 endef
