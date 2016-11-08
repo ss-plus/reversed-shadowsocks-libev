@@ -8,7 +8,7 @@ include $(TOPDIR)/rules.mk
 
 PKG_NAME:=reversed-shadowsocks-libev
 PKG_VERSION:=2.4.8
-PKG_RELEASE:=2
+PKG_RELEASE:=3
 
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION)-$(PKG_RELEASE).tar.gz
 PKG_SOURCE_URL:=https://github.com/breakwa11/shadowsocks-libev.git
@@ -38,7 +38,7 @@ define Package/$(PKG_NAME)
   $(call Package/$(PKG_NAME)/Default)
   TITLE+= (OpenSSL)
   VARIANT:=openssl
-  DEPENDS:=+libopenssl +libpthread
+  DEPENDS:=+libopenssl +libpthread +zlib
 endef
 
 define Package/$(PKG_NAME)-polarssl
